@@ -102,10 +102,32 @@ MAIN
 }
 
 .item-desc {
+    margin-top: -15px;
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 0 0 30px 0;
+}
+
+.brand {
+    font-size: 12px;
+}
+
+.desc-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.prices {
+    font-size: 14px;
+}
+
+.price-discount {
+    color: red;
+}
+
+.full-price {
+    text-decoration: line-through;
 }
 
 div [class^='tag'] {
@@ -137,7 +159,11 @@ div [class^='tag'] {
 .tag.eco {
     background-color: green;
     bottom: 40px;
-    left: 40px;
+    left: 45px;
+}
+
+#card_six {
+    left: 0;
 }
 
 /***********************
@@ -190,14 +216,14 @@ DEBUG RULES
     border: 2px dashed green;
 } */
 
-.debug .col-main {
+/* .debug .col-main {
     min-height: 500px;
-}
+} */
 
-.debug .item-desc {
+/* .debug .item-desc {
     min-height: 100px;
     border: 2px dashed blue;
-}
+} */
 
 .debug .main-footer {
     background-color: darkgray;
