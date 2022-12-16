@@ -20,9 +20,19 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /***********************
 HEADER
 ***********************/
+
+.main-header {
+    background-color: #FF6900;
+    box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0.664);
+}
 
 .row-head {
     display: flex;
@@ -38,13 +48,14 @@ ul > li {
     flex-basis: calc(100%/3);
 }
 
-.col-head-2 {
-    flex-basis: calc(100%/2);
+.item_list {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.col-head-3{
-    flex-basis: calc(100%/3);
-    justify-content: end;
+.col-head-2 {
+    flex-basis: calc(100%/2);
 }
 
 .logo {
@@ -54,6 +65,17 @@ ul > li {
 
 .item_logo {
     justify-content: center;
+}
+
+.col-head-3{
+    flex-basis: calc(100%/3);
+    justify-content: end;
+    padding-left: 10px;
+}
+
+.fa {
+    color: white;
+    padding-left: 10px;
 }
 
 /***********************
@@ -67,7 +89,7 @@ MAIN
 .row-main {
     display: flex;
     flex-wrap: wrap;
-    gap: 11px;
+    gap: 15px;
 }
 
 .col-main {
@@ -152,21 +174,21 @@ FOOTER
 DEBUG RULES
 ***********************/
 
-.debug .main-header {
+/* .debug .main-header {
     background-color: red;
     min-height: 80px;
     border: 2px dotted blue;
-}
+} */
 
-.debug .container {
+/* .debug .container {
     background-color: transparent;
     border: 2px solid black;
-}
+} */
 
-.debug [class^='row'] {
+/* .debug [class^='row'] {
     padding: 5px 0;
     border: 2px dashed green;
-}
+} */
 
 .debug .col-main {
     min-height: 500px;
