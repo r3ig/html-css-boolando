@@ -30,10 +30,6 @@ HEADER
     align-items: center;
 }
 
-.head-menu.item_list {
-    justify-content: space-around;
-}
-
 ul > li {
     padding: 0 20px 0 0;
 }
@@ -79,15 +75,15 @@ MAIN
     position: relative;
 }
 
+.card-image {
+    position: relative;
+}
+
 .item-desc {
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 10px 0;
-}
-
-.card-image {
-    position: relative;
 }
 
 div [class^='tag'] {
@@ -127,6 +123,32 @@ MAIN
 ***********************/
 
 /***********************
+FOOTER
+***********************/
+
+.row-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-foot-1 {
+    flex-wrap: wrap;
+}
+
+.col-foot-2 {
+    justify-content: end;
+}
+
+.foot-title {
+    flex-basis: 100%;
+}
+
+/***********************
+FOOTER
+***********************/
+
+/***********************
 DEBUG RULES
 ***********************/
 
@@ -153,5 +175,11 @@ DEBUG RULES
 .debug .item-desc {
     min-height: 100px;
     border: 2px dashed blue;
+}
+
+.debug .main-footer {
+    background-color: darkgray;
+    min-height: 70px;
+    border: 2px dotted purple;
 }
 
